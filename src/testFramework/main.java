@@ -11,6 +11,8 @@ public class main {
 	    // Firefox tests
 	    FirefoxBrowser firefox = new FirefoxBrowser();
 	    firefox.loginTest();
+	    firefox.saveRecipeTest();
+	    firefox.logoutTest();
 	    //firefox.quit();
 	}
 	/*
