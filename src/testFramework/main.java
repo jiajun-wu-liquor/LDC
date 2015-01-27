@@ -3,7 +3,9 @@ package testFramework;
 public class main {
 	
 	public static void main(String[] args) {
-	    // Firefox tests
+	    
+		String CHROMEDRIVER_PATH = "C:////Users//david//workspace//LDC//addons//chromedriver.exe";
+		
 		System.out.println("Beginning functional test on Firefox");
 	    FirefoxBrowser firefox = new FirefoxBrowser();
 	    firefox.loginTest();
@@ -11,6 +13,15 @@ public class main {
 	    firefox.logoutTest();
 	    firefox.quit();
 	    firefox.summarise();
+	    
+	    System.out.println("Beginning functional test on Chrome");
+	    System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_PATH);
+	    ChromeBrowser chrome = new ChromeBrowser();
+	    chrome.loginTest();                      
+	    chrome.saveRecipeTest();
+	    chrome.logoutTest();
+	    chrome.quit();
+	    chrome.summarise();
 	}
 	/*
 	public static FirefoxProfile getProfile() {

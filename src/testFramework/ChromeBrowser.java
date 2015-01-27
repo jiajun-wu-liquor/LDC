@@ -29,7 +29,7 @@ public class ChromeBrowser extends ChromeDriver {
 	    logLoadTime();
 	    
 	    if (pageDoesContainClass("ldc-user-log-out")) {
-	    	System.out.println("• Firefox login - Successful");
+	    	System.out.println("• Chrome login - Successful");
 	    }
 	
 	}
@@ -41,7 +41,7 @@ public class ChromeBrowser extends ChromeDriver {
 		
 		goToLink("http://liquor.com/user-profile/?tab=recipes");
 		if (pageDoesContainText("Bitters Sweet Barrel")) {
-			System.out.println("• Firefox save recipe - Successful");
+			System.out.println("• Chrome save recipe - Successful");
 		}
 		
 		goToLink("https://liquor.com/recipes/bitters-sweet-barrel/");
@@ -58,7 +58,7 @@ public class ChromeBrowser extends ChromeDriver {
 		}
 		
 		if (pageDoesContainClass("ldc-user-login")){
-			System.out.println("• Firefox logout - Successful");
+			System.out.println("• Chrome logout - Successful");
 		}
 	}
 	
