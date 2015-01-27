@@ -4,9 +4,10 @@ import java.lang.System;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FirefoxBrowser extends FirefoxDriver {
+
+public class ChromeBrowser extends ChromeDriver {
 	
 	int LOAD_WAIT_TIME = 10;
 	long startTime;

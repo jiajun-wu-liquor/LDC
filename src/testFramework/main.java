@@ -1,19 +1,16 @@
 package testFramework;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.openqa.selenium.firefox.FirefoxProfile;
-
 public class main {
 	
 	public static void main(String[] args) {
 	    // Firefox tests
+		System.out.println("Beginning functional test on Firefox");
 	    FirefoxBrowser firefox = new FirefoxBrowser();
 	    firefox.loginTest();
 	    firefox.saveRecipeTest();
 	    firefox.logoutTest();
-	    //firefox.quit();
+	    firefox.quit();
+	    firefox.summarise();
 	}
 	/*
 	public static FirefoxProfile getProfile() {
